@@ -1,9 +1,30 @@
 import 'package:flutter/material.dart';
 
-class  extends StatelessWidget {
+void main()=> runApp(new MyApp());
+
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return new MaterialApp(
+      home: new LoginPage() ,
+      theme: new ThemeData(
+        primarySwatch: Colors.black38
+      ),
+    );
+  }
+}
+
+class LoginPage extends StatefulWidget {
+  @override
+  _LoginPageState createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+      backgroundColor: Colors.black,
+    );
   }
 }
 
