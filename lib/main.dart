@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       home: new LoginPage() ,
       theme: new ThemeData(
-        primarySwatch: Colors.black38
+        primarySwatch: Colors.blue
       ),
     );
   }
@@ -23,7 +23,14 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.amber,
+      body: new Stack(
+        children:<Widget> [new Image(
+          image: new AssetImage("assets/bg1.jpg"),
+          fit: BoxFit.cover,
+        )
+        ],
+      ),
     );
   }
 }
